@@ -1,0 +1,352 @@
+:root {
+  --color-masthead-bg--active: rgba(0, 0, 0, 0.8);
+  --color-masthead-subitem-bg: rgba(0, 0, 0, 0.6);
+  --color-masthead-alt-bg: rgba(0, 0, 0, 0.4);
+  --color-masthead-bg: #e4002b;
+  --color-masthead-bg-hover: #cc0026;
+  --color-masthead-text: #fff;
+  --color-masthead-second-text: #e8e8e8;
+  --color-masthead-third-text: #bbbfca;
+  --color-footer-primary: #4f4557;
+}
+
+.text {
+  color: var(--color-masthead-bg--active);
+}
+
+.judul {
+  color: var(--color-masthead-bg);
+}
+
+/* CSS */
+input:focus,
+textarea:focus {
+  outline-color: var(--color-masthead-bg-hover);
+  border-color: var(
+    --color-masthead-bg
+  ); /* Ganti dengan warna yang diinginkan */
+  box-shadow: 0 0 0 2px var(--color-masthead-bg); /* Ganti dengan warna dan ukuran shadow yang diinginkan */
+  /* Atau kustomisasi properti lain sesuai kebutuhan */
+}
+
+label {
+  color: var(--color-masthead-bg--active);
+}
+
+.button,
+button.button {
+  padding: 10px 15px;
+  background-color: var(--color-masthead-bg);
+  outline: none;
+  color: #eee;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s; /* Add transition for smooth effect */
+  font-weight: 600;
+}
+
+.button:hover {
+  background-color: var(
+    --color-masthead-bg-hover
+  ); /* Change the background color on hover */
+}
+
+.box {
+  width: 500px;
+  height: 130px;
+  background-color: var(--color-masthead-bg);
+  margin: 0 auto;
+  position: relative;
+  margin-top: -65px;
+  z-index: 2;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.box:hover {
+  background-color: var(--color-masthead-bg-hover);
+}
+
+/* Navbar */
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+nav.scrolled {
+  background-color: var(--color-masthead-bg);
+}
+
+nav.scrolled .judul_navbar,
+nav.scrolled .nav-link {
+  color: white;
+}
+
+nav.scrolled li.active .nav-link:after {
+  background-color: var(--color-masthead-text);
+}
+
+li.active .nav-link {
+  position: relative;
+}
+
+li.active .nav-link:after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: var(--color-masthead-bg);
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+}
+
+/* Home */
+.home-container {
+  position: relative;
+  overflow: hidden;
+  height: calc(600px - 64px);
+  z-index: 1;
+}
+
+.fullscreen-bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.fullscreen-bg__video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.content-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 600px;
+}
+
+.text-content {
+  font-size: 4rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.button-position {
+  margin-top: 10px;
+}
+
+.icon_home {
+  color: white;
+  width: 30px;
+  height: 30px;
+}
+
+.box .text_box {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-masthead-second-text);
+}
+
+.box .text_box_2 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-masthead-third-text);
+}
+
+.text_home {
+  color: var(--color-masthead-bg--active);
+  text-indent: 3rem;
+  text-align: justify;
+}
+
+.judul_about {
+  position: relative;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.judul_about:after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: var(--color-masthead-bg);
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+}
+
+.image_ilustrasi {
+  width: 490px;
+  height: 390px;
+}
+
+/* Blog */
+.judul_blog {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.blog_utama_img {
+  height: 100%;
+}
+
+.text_kontak_icon {
+  margin-bottom: -3px; /* Atur jarak antara teks "museumgaleriindonesia" dengan teks "Ini adalah museum galeri" */
+}
+
+.box_icon {
+  margin-top: 0;
+}
+
+.icon_bg_blog {
+  background-color: var(--color-masthead-bg);
+  padding: 5px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.icon_bg_blog:hover {
+  background-color: var(--color-masthead-bg-hover);
+}
+
+.nama_penulis {
+  color: var(--color-masthead-bg--active);
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+
+.pekerjaan_penulis {
+  color: var(--color-masthead-subitem-bg);
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.icon_kontak_blog {
+  color: var(--color-masthead-text);
+}
+
+.date_blog_utama {
+  font-size: 0.8rem;
+  color: var(--color-masthead-subitem-bg);
+  font-weight: 400;
+}
+
+.text_blog {
+  font-size: 1rem;
+  color: var(--color-masthead-bg--active);
+  font-weight: 400;
+}
+
+/* Museum */
+.card_pameran {
+  background-color: var(--color-masthead-third-text);
+}
+
+/* Kontak */
+.judul_form {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--color-masthead-bg--active);
+}
+
+.semi_judul {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--color-masthead-bg--active);
+}
+
+.text_kontak {
+  font-size: 1rem;
+  color: var(--color-masthead-bg--active);
+}
+
+.icon_kontak {
+  width: 15px;
+  height: 15px;
+  transition: 0.3s;
+  color: var(--color-masthead-text);
+}
+
+.text_kontak_icon {
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.icon_link {
+  color: var(--color-masthead-bg--active);
+  transition: 0.3s;
+}
+
+.icon_link:hover {
+  color: var(--color-masthead-subitem-bg);
+}
+
+.icon_bg {
+  background-color: var(--color-masthead-bg);
+  padding: 8px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.icon_bg:hover {
+  background-color: var(--color-masthead-bg-hover);
+}
+
+/* Footer */
+footer {
+  background-color: var(--color-masthead-bg-hover);
+  color: var(--color-masthead-text);
+}
+
+.copyright {
+  color: var(--color-masthead-text);
+  background-color: var(--color-masthead-bg);
+}
+
+.deskripsi_footer {
+  color: var(--color-masthead-second-text);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.icon_bg_footer {
+  background-color: var(--color-masthead-text);
+  padding: 8px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+
+.icon_bg_footer:hover {
+  background-color: var(--color-masthead-second-text);
+}
+
+.icon_bg_footer svg {
+  color: var(--color-footer-primary);
+}
