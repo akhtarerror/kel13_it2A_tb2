@@ -31,7 +31,7 @@ const Museum = () => {
               <h1 className="text-4xl text-content font-bold text-white mb-8">
                 Museum Galeri Nasional Indonesia
               </h1>
-              <a href="" className="button mt-5">
+              <a href="/kontak" target="_blank" className="button mt-5">
                 Hubungi Kami
               </a>
             </div>
