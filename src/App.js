@@ -6,6 +6,7 @@ import Museum from "./views/Museum";
 import Kontak from "./views/Kontak";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
+import ScrollTop from "./components/ScrollTop";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/kontak" element={<Kontak />} />
       </Routes>
       <Footer />
+      <ScrollTop />
     </Router>
   );
 };

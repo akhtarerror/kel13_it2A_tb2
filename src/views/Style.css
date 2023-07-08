@@ -322,6 +322,7 @@ li.active .nav-link:after {
 footer {
   background-color: var(--color-masthead-bg-hover);
   color: var(--color-masthead-text);
+  position: relative;
 }
 
 .copyright {
@@ -349,4 +350,17 @@ footer {
 
 .icon_bg_footer svg {
   color: var(--color-footer-primary);
+}
+
+#ScrollTop {
+  background-color: var(--color-masthead-bg);
+  padding: 5px;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+#ScrollTop:hover {
+  background-color: var(--color-masthead-bg-hover);
 }

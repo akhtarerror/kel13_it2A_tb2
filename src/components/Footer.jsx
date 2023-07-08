@@ -5,21 +5,20 @@ const Footer = () => {
     <footer className="py-4 mt-20 relative">
       <div className="container mx-auto text-center pb-20">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-          <a
-            href="https://www.google.com/maps/place/National+Gallery+of+Indonesia/@-6.1785482,106.8305829,17z/data=!3m1!4b1!4m6!3m5!1s0x2e69f432fb0c95a5:0x5a9cae96473931a8!8m2!3d-6.1785482!4d106.8327716!16s%2Fm%2F0qfpbqv?entry=ttu"
-            target="_blank"
-          >
-            <div>
-              <h4 className="font-bold">Alamat</h4>
-              <p className="deskripsi_footer mt-1">
-                Jl. Medan Merdeka Tim. No.14, RT.6/RW.1, Gambir
-              </p>
-              <p className="deskripsi_footer">Kota Jakarta Pusat</p>
-              <p className="deskripsi_footer">Provinsi DKI Jakarta</p>
-            </div>
-          </a>
           <div>
-            <h4 class="font-bold">Sosial Media</h4>
+            <h4 className="font-bold mt-5">
+              Visi Museum Galeri Nasional Indonesia
+            </h4>
+            <p className="deskripsi_footer mt-1">
+              Menjadi pusat pengembangan dan pelestarian seni rupa Indonesia
+              yang unggul, berdaya saing global, serta menjadi jembatan antara
+              seniman, pengamat seni, dan masyarakat dalam mengapresiasi dan
+              memahami seni rupa Indonesia.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="font-bold mt-5">Sosial Media</h4>
             <ul class="flex flex-row justify-center space-x-3">
               <a href="https://intsagram.com/galerinasional/" target="_blank">
                 <div className="mt-3 icon_bg_footer">
@@ -68,15 +67,19 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
-            <h4 className="font-bold">Visi Museum Galeri Nasional Indonesia</h4>
-            <p className="deskripsi_footer mt-1">
-              Menjadi pusat pengembangan dan pelestarian seni rupa Indonesia
-              yang unggul, berdaya saing global, serta menjadi jembatan antara
-              seniman, pengamat seni, dan masyarakat dalam mengapresiasi dan
-              memahami seni rupa Indonesia.
-            </p>
-          </div>
+          <a
+            href="https://www.google.com/maps/place/National+Gallery+of+Indonesia/@-6.1785482,106.8305829,17z/data=!3m1!4b1!4m6!3m5!1s0x2e69f432fb0c95a5:0x5a9cae96473931a8!8m2!3d-6.1785482!4d106.8327716!16s%2Fm%2F0qfpbqv?entry=ttu"
+            target="_blank"
+          >
+            <div>
+              <h4 className="font-bold mt-5">Alamat</h4>
+              <p className="deskripsi_footer mt-1">
+                Jl. Medan Merdeka Tim. No.14, RT.6/RW.1, Gambir
+              </p>
+              <p className="deskripsi_footer">Kota Jakarta Pusat</p>
+              <p className="deskripsi_footer">Provinsi DKI Jakarta</p>
+            </div>
+          </a>
         </div>
       </div>
       <p className="absolute bottom-0 left-0 w-full py-2 text-center copyright">
